@@ -812,29 +812,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Mobile Contact Fix */
-  .contact-method-inline {
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .contact-method-inline span {
-    font-size: 14px;
-    word-break: break-word;
-    line-height: 1.5;
-  }
-
-  .contact-method-inline svg {
-    min-width: 20px;
-  }
-
-  .contact-info {
-    padding: 0 10px;
-  }
-
-  .contact-grid {
-    gap: 2rem;
-  }
   .section {
     padding: 80px 0;
   }
@@ -936,10 +913,7 @@ footer {
   border-radius: 50%;
 }
 
-/* =========================
-   CONTACT SIMPLE CARD
-========================= */
-
+/* ========================= CONTACT SIMPLE CARD ========================= */
 .contact-card {
   max-width: 600px;
   margin: 0 auto;
@@ -952,13 +926,11 @@ footer {
   flex-direction: column;
   gap: 2.5rem;
 }
-
 .contact-item {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .icon-box {
   width: 60px;
   height: 60px;
@@ -970,19 +942,49 @@ footer {
   font-size: 22px;
   color: #3b82f6;
 }
-
 .contact-details {
   display: flex;
   flex-direction: column;
 }
-
 .contact-label {
   color: var(--text-secondary);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
-
 .contact-value {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-primary);
+}
+
+/* ================= MOBILE CONTACT FIX ================= */
+
+@media (max-width: 768px) {
+  .contact-card {
+    width: 92%;
+    padding: 1.8rem;
+    gap: 1.8rem;
+  }
+
+  .contact-item {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .icon-box {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
+  .contact-label {
+    font-size: 0.75rem;
+    margin-bottom: 3px;
+  }
+
+  .contact-value {
+    font-size: 0.95rem;
+    word-break: break-word;
+    line-height: 1.4;
+  }
 }
