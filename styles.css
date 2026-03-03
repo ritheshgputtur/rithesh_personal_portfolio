@@ -812,6 +812,29 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Mobile Contact Fix */
+  .contact-method-inline {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .contact-method-inline span {
+    font-size: 14px;
+    word-break: break-word;
+    line-height: 1.5;
+  }
+
+  .contact-method-inline svg {
+    min-width: 20px;
+  }
+
+  .contact-info {
+    padding: 0 10px;
+  }
+
+  .contact-grid {
+    gap: 2rem;
+  }
   .section {
     padding: 80px 0;
   }
