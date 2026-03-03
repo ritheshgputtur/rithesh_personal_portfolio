@@ -912,3 +912,54 @@ footer {
   object-fit: cover;
   border-radius: 50%;
 }
+
+/* =========================
+   CONTACT SIMPLE CARD
+========================= */
+
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 3rem;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #3b82f6;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.contact-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
